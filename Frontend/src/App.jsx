@@ -20,13 +20,13 @@ function App() {
   };
 
   const todoComplete = (id) => {
-    // return mapped array and toggle completed
+
     setTodos((prev) =>
       prev.map((t) => (t.id === id ? { ...t, completed: !t.completed } : t))
     );
   };
 
-  // load from localStorage once
+
   useEffect(() => {
     try {
       const raw = localStorage.getItem("todos");
@@ -40,7 +40,6 @@ function App() {
     }
   }, []);
 
-  // persist
   useEffect(() => {
     try {
       localStorage.setItem("todos", JSON.stringify(todos));
