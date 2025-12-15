@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://localhost:4999', 
+  baseURL: 'https://task-manager-ref4-1cmjn2alf-shuvam776s-projects.vercel.app/', 
   withCredentials: true,
 });
 
